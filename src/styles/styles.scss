@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    overflow-x:hidden ;
+}
+
+
+
+
+$colorButton:#00A6FF ;
+
+$greyText: #8190A5;
+
+
+//importamos los componentes
+
+
+@import './components/Login/login';

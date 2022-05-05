@@ -1,0 +1,159 @@
+
+//====>Contenedor principal del componente <========
+
+.login__container{
+background-image: url('../../../assets/archivos/backgroundLogin.jpg');
+background-repeat: no-repeat;
+display: flex;
+height: 100vh;
+justify-content: flex-end;
+align-items : center;
+}
+//====>contenedor del formulario<========
+.login__container-form{
+   
+    background-color: #fff;
+    border-radius: 20px;
+    width: 623px;
+    height: 730px;
+    margin-right: 200px;
+}
+
+.login__from{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+//=======>contiene ambas imagenes<==============
+.login__container-imageForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__sms-Image-form{
+    width: 202px;
+    height: 92px;
+
+}
+.login__-martImage-form{
+    width: 342px;
+    height: 58px;
+}
+//=======>Contiene el titulo y la descript<==============
+.login__container-titleform{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .login__titleForm{
+        color: #47525E;
+        font-family: Lato;
+        font-size: 40px;
+        letter-spacing: 3px;
+        line-height: 51px;
+        width: 800px;
+        text-align: center;
+    }
+    .login__decriptForm{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        color: $greyText;
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 28px;
+        width: 492px;
+        text-align: center;
+    }
+
+}    
+
+//=======>contiene inputs<==============
+.login__container-inputs{
+    display: flex;
+    flex-direction: column;
+}    
+
+.input{
+    border: 1px solid #8492A6;
+    border-radius: 5px;
+    width: 350px;
+    height: 68px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding: .4rem;
+     outline: hidden;
+    
+}
+
+.input::placeholder{
+    color: $greyText;
+  
+    font-size: 1.2rem;
+    line-height: 62px;
+    width: 336px;
+    
+    
+    
+}
+
+//=======>Checkbox de mostrar contraseña<==============
+.login__container-passwd{
+    display: flex;
+    align-items: center;
+    margin-left: .4rem;
+    label{
+        margin-right: .4rem;
+    
+    }
+    input{
+        &:hover{
+            cursor: pointer;
+        }
+    
+    }
+}
+
+
+
+//=======>Boton de acceder<==============
+.login__button-form{
+    color: #fff;
+    background-color: $colorButton;
+    border: none;
+    border-radius: 5px;
+    width: 375px;
+    height: 62px;
+    padding: .3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: .3s ease-in background;
+    margin-top: 2rem;
+    
+
+    &:hover{
+        cursor: pointer;
+        background-color: darken($color: $colorButton, $amount: 14);
+
+    }
+    
+}
+//=======> link de olvidaste tu contraseña <==============
+.login__forgetpasswd{
+    color: $greyText;
+  font-family: Lato;
+  font-size: 17px;
+  line-height: 22px;
+  width: 800px;
+  text-align: center;
+  margin-top: 2rem;
+  transition: .3s ease-in color;
+    &:hover{
+        cursor: pointer;
+        color: darken($color: $colorButton, $amount: 10);
+    }
+
+}
+
