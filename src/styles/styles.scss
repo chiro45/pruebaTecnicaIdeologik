@@ -5,6 +5,8 @@
 }
 html{
     overflow-x:hidden ;
+
+   
 }
 
 
@@ -19,3 +21,5 @@ $greyText: #8190A5;
 
 
 @import './components/Login/login';
+
+@import './components/SectionScreen/sectionScreen';

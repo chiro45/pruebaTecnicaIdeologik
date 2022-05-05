@@ -1,0 +1,47 @@
+
+
+.screenActon__container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.screenAction__navContainerLinks{
+    display: flex;
+    justify-content: space-between;
+
+    width: 500px;
+    
+
+}
+
+.screenAction__nav-container-list{
+    ul{
+
+        list-style: none;
+        display: flex;
+        width: 500px;
+        justify-content: space-around;
+
+        
+
+        li{
+
+            color: #47525E;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 62px;
+            width: 162px;
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+.screenAction__navImg{
+    width: 151px;
+    height: 69px;
+
+}
+

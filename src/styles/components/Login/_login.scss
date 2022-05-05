@@ -4,8 +4,10 @@
 .login__container{
 background-image: url('../../../assets/archivos/backgroundLogin.jpg');
 background-repeat: no-repeat;
+background-size: cover;
 display: flex;
-height: 100vh;
+min-height: 100vh;
+min-width: 100vw;
 justify-content: flex-end;
 align-items : center;
 }
@@ -146,7 +148,7 @@ align-items : center;
   font-family: Lato;
   font-size: 17px;
   line-height: 22px;
-  width: 800px;
+  width: 400px;
   text-align: center;
   margin-top: 2rem;
   transition: .3s ease-in color;
@@ -157,3 +159,443 @@ align-items : center;
 
 }
 
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+//====>contenedor del formulario<========
+.login__container-form{
+    margin-right: 100px;
+}
+
+
+}
+
+
+@media screen and (max-width: 1366px) {
+    //====>contenedor del formulario<========
+.login__container-form{
+    
+    width: 523px;
+    height: 630px;
+    margin-right: 150px;
+}
+
+.login__from{
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+//=======>contiene ambas imagenes<==============
+.login__container-imageForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__sms-Image-form{
+    width: 152px;
+    
+
+}
+.login__-martImage-form{
+    width: 242px;
+    
+}
+//=======>Contiene el titulo y la descript<==============
+.login__container-titleform{
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .login__titleForm{
+        color: #47525E;
+        font-family: Lato;
+        font-size: 1.7rem;
+        letter-spacing: 3px;
+        line-height: 31px;
+        width: 400px;
+        text-align: center;
+    }
+    .login__decriptForm{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        color: $greyText;
+        font-family: Lato;
+        font-size: .9rem;
+        line-height: 28px;
+        width: 322px;
+        text-align: center;
+    }
+
+}    
+  
+
+//=======>contiene inputs<==============
+.login__container-inputs{
+    display: flex;
+    flex-direction: column;
+}    
+
+.input{
+    border: 1px solid #8492A6;
+    border-radius: 5px;
+    width: 300px;
+    height: 38px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: .4rem;
+     outline: hidden;
+    
+}
+
+.input::placeholder{
+    color: $greyText;
+  
+    font-size: 1.2rem;
+    line-height: 62px;
+    width: 336px;
+    
+    
+    
+}
+
+//=======>Boton de acceder<==============
+.login__button-form{
+    color: #fff;
+    background-color: $colorButton;
+    border: none;
+    border-radius: 5px;
+    width: 312px;
+    height: 42px;
+    padding: .3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: .3s ease-in background;
+    margin-top: 1rem;
+    
+
+    &:hover{
+        cursor: pointer;
+        background-color: darken($color: $colorButton, $amount: 14);
+
+    }
+    
+}
+}
+
+
+@media screen and (max-width: 1024px) {
+    //====>contenedor del formulario<========
+    .login__container-form{
+    
+        width: 423px;
+        height: 530px;
+        margin-right: 100px;
+    }
+    
+    .login__from{
+        margin-top: .8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    //=======>contiene ambas imagenes<==============
+    .login__container-imageForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login__sms-Image-form{
+        height: 52px;
+        
+    
+    }
+    .login__-martImage-form{
+        height: 38px;
+        
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 630px) {
+    //====>Contenedor principal del componente <========
+
+.login__container{
+   
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items : center;
+    }
+
+    //====>contenedor del formulario<========
+    .login__container-form{
+        background-color: #fff;
+        border-radius: 20px;
+        width: 340px;
+        height: 530px;
+        
+        margin: 0;
+    }
+    
+    .login__from{
+        margin-top: .3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    //=======>contiene ambas imagenes<==============
+    .login__container-imageForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login__sms-Image-form{
+        
+        height: 50px;
+    
+    }
+    .login__-martImage-form{
+       
+        height: 55px;
+    }
+    //=======>Contiene el titulo y la descript<==============
+    .login__container-titleform{
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .login__titleForm{
+            color: #47525E;
+            font-family: Lato;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .login__decriptForm{
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            color: $greyText;
+            font-family: Lato;
+            font-size: 1rem ;
+            line-height: 18px;
+            width: 200px;
+            text-align: center;
+        }
+    
+    }    
+    
+    //=======>contiene inputs<==============
+    .login__container-inputs{
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    .input{
+        border: 1px solid #8492A6;
+        border-radius: 5px;
+        width: 220px;
+        height: 30px;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        padding: .4rem;
+         outline: hidden;
+        
+    }
+    
+    .input::placeholder{
+        color: $greyText;
+        font-size: 1rem;
+        line-height: 62px;
+        width: 220px;
+    }
+    
+    //=======>Checkbox de mostrar contraseña<==============
+    .login__container-passwd{
+        display: flex;
+        align-items: center;
+        margin-left: .4rem;
+        label{
+            margin-right: .4rem;
+        
+        }
+        input{
+            &:hover{
+                cursor: pointer;
+            }
+        
+        }
+    }
+    
+    
+    
+    //=======>Boton de acceder<==============
+    .login__button-form{
+        color: #fff;
+        background-color: $colorButton;
+        border: none;
+        border-radius: 5px;
+        width: 230px;
+        height: 45px;
+        padding: .2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: .3s ease-in background;
+        margin-top: 2rem;
+        
+    
+        &:hover{
+            cursor: pointer;
+            background-color: darken($color: $colorButton, $amount: 14);
+    
+        }
+        
+    }
+}
+
+@media screen and (max-width: 430px) {
+       //====>Contenedor principal del componente <========
+
+.login__container{
+   
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items : center;
+    }
+
+    //====>contenedor del formulario<========
+    .login__container-form{
+        background-color: #fff;
+        border-radius: 20px;
+        width: 300px;
+        height: 530px;
+        margin: 0;
+    }
+    
+
+    .login__sms-Image-form{ 
+        height: 40px;
+     
+    }
+    .login__-martImage-form{
+       
+        height: 35px;
+        width: 100%;
+    }
+    //=======>Contiene el titulo y la descript<==============
+    .login__container-titleform{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        .login__titleForm{
+            color: #47525E;
+            font-family: Lato;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+            line-height: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .login__decriptForm{
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            color: $greyText;
+            font-family: Lato;
+            font-size: 1rem ;
+            line-height: 18px;
+            width: 200px;
+            text-align: center;
+        }
+    
+    }    
+    
+    //=======>contiene inputs<==============
+    .login__container-inputs{
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    .input{
+        border: 1px solid #8492A6;
+        border-radius: 5px;
+        width: 220px;
+        height: 30px;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        padding: .4rem;
+         outline: hidden;
+        
+    }
+    
+    .input::placeholder{
+        color: $greyText;
+        font-size: 1rem;
+        line-height: 62px;
+        width: 220px;
+    }
+    
+    //=======>Checkbox de mostrar contraseña<==============
+    .login__container-passwd{
+        display: flex;
+        align-items: center;
+        margin-left: .4rem;
+        label{
+            margin-right: .4rem;
+        
+        }
+        input{
+            &:hover{
+                cursor: pointer;
+            }
+        
+        }
+    }
+    
+    
+    
+    //=======>Boton de acceder<==============
+    .login__button-form{
+        color: #fff;
+        background-color: $colorButton;
+        border: none;
+        border-radius: 5px;
+        width: 230px;
+        height: 45px;
+        padding: .2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: .3s ease-in background;
+        margin-top: 2rem;
+        
+    
+        &:hover{
+            cursor: pointer;
+            background-color: darken($color: $colorButton, $amount: 14);
+    
+        }
+        
+    }
+    .login__forgetpasswd{
+        width: 200px;
+        font-size: 1rem;
+
+    }
+}
