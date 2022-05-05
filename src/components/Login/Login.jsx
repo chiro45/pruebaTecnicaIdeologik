@@ -24,10 +24,10 @@ const handleShow = ()=>{
 
                             <div className="login__form-container-imageForm">
                                     <div className='login__container-imageForm'>
-                                           <img src={ sm2Logo } className='login__sms-Image-form' />
+                                           <img src={ sm2Logo } className='login__sms-Image-form' alt='logoSM2'/>
                                      </div>
                                     <div className='login__container-imageForm'>
-                                           <img src={ smartraining }  className='login__-martImage-form'/>
+                                           <img src={ smartraining }  className='login__-martImage-form' alt='SMARTRAINING'/>
                                      </div>
                             </div>
                             <div className='login__container-titleform'>
