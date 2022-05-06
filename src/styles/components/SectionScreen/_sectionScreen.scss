@@ -65,3 +65,16 @@ font-size: 1.4rem;
     margin: .3rem; 
     text-transform: none;
 }
+
+
+.container__spiner{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.container__spiner h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

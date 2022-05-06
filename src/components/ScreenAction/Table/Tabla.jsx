@@ -1,12 +1,18 @@
+import { TablaVacia } from "./TablaVacia"
 
-import React from 'react'
 
 
-export const Tabla = ({simuladores}) => {
+
+
+export const Tabla = ({simuladores = []}) => {
+//si todavia no hay simuladores en el state se presenta la pantalla vacia, sino mostramos la tabla y su respectiva iteracion
   return (
+    (simuladores.length === 0)
+    ? <TablaVacia/>
+   :
     <div className='container__table table-responsive table-responsive-sm table-responsive-md '>
-    <table class="table align-middle mb-0 table-striped">
-<thead class="bg-light" >
+    <table className="table align-middle mb-0 table-striped">
+<thead className="bg-light" >
   <tr  className='align-items-center'>
     <th  scope='col' >ID</th>
     <th  scope='col' >Curso</th>
@@ -41,10 +47,10 @@ export const Tabla = ({simuladores}) => {
         
     )
 
-
-
-  )}
-  
+    
+    )
+    
+}
   
 </tbody>
 </table>

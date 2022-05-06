@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Navbar } from './Navbar/Navbar';
-import {Vr3602, Vrs} from '../../helpers/simuladores'
+
 
 import Vr360 from '../../assets/archivosScreenAction/Vr360.png'
 import Vr from '../../assets/archivosScreenAction/Vr.png'
@@ -10,6 +10,7 @@ import Raster from '../../assets/archivosScreenAction/Raster.png'
 
 
 import { Tabla } from './Table/Tabla';
+import { useSelector } from 'react-redux';
 
 
 
@@ -18,21 +19,16 @@ export const ScreenAction = () => {
   //state para el cambio del llamado desde el navBar
  const [simulator, setSimulator] = useState('VRs');
 
- //state que maneja la llegada de los elementos => ubicados en helpers
- let [simuladores, setSimuladores] = useState(Vrs);
+ const {products} =  useSelector(store => store.productReducer)
+
+
 
  //cuando 
   const handleChangeSimulator = (simulator)=>{
     //cambia el valor de simulator => que es la descript de la tabla
     setSimulator(simulator)
 
-    //preguntamos si es igual a el state actual y que nos lo cambie sino que deje el mismo
-    //si se tuviera un endpoint los datos vendrian de otra manera y para este ejercicio me parecio bien resolverlo de esta manera
-    if(simulator === "VRs"){
-      setSimuladores(Vrs)
-    }else if(simulator === "WEB 360"){
-      setSimuladores(Vr3602)
-    }
+    
        
   }
   return (
@@ -59,7 +55,7 @@ export const ScreenAction = () => {
 
             </div>
               {/* <Table simuladores={simuladores}/> */}
-            <Tabla simuladores={simuladores}/>
+            <Tabla simuladores={products}/>
 
 
         </div>

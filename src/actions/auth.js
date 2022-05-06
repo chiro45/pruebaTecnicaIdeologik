@@ -1,5 +1,6 @@
 import Swal from "sweetalert2"
 import { types } from "../types/types"
+import { clearLogout } from "./product"
 
 //se llama desde el login y es el que maneja el envio del formulario
 export const startLogin =  (user,passwd)=>{
@@ -22,7 +23,12 @@ export const login = (user)=>({
 })
 
 
-
+export const StartLogout =()=>{
+    return async(dispatch)=>{
+        dispatch(logout())
+        dispatch(clearLogout())
+    }
+}
 
 
 //se llama desde el navbar

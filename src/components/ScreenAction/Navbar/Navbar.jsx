@@ -2,7 +2,8 @@ import { useState } from 'react'
 import LogoNav from '../../../assets/archivosScreenAction/LogoNav.png'
 
 import { useDispatch } from 'react-redux';
-import { logout } from '../../../actions/auth';
+import {  StartLogout } from '../../../actions/auth';
+import { traerProductos } from '../../../actions/product';
 
 //en este temenos el navBar y todos sus elementos
 
@@ -17,6 +18,8 @@ const dispatch = useDispatch();
         const id = target.id;
         changeSimulator(`${id}`)
         setElementNav(!elementNav)
+        //hacemos el dispatch para traer los respectivos elementos a pantalla
+        dispatch(traerProductos(`${id}`))
     }
 
 //realizamos cambios en el navbar
@@ -27,7 +30,7 @@ const handleClick = ()=>{
 
 //realizamos el logout
 const handleLogout = ()=>{
-    dispatch(logout())
+    dispatch(StartLogout())
 }
   return (
     <nav className="screenActon__container-nav">

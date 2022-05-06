@@ -8,3 +8,22 @@ $greyText: #8190A5;
 
 
 $amarilloLogout: #FFBA5C;
+
+
+
+   /*========== SCROLL BAR ==========*/
+   ::-webkit-scrollbar{
+    width: .8rem;
+    background-color: rgb(204, 201, 177);
+    
+    
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(80, 72, 72);
+    border-radius: .5rem;
+    
+    &:hover{
+        background-color: darken($color: rgb(122, 122, 134), $amount: 30);
+    }
+}

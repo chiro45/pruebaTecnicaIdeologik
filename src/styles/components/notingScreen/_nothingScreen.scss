@@ -1,0 +1,36 @@
+$gradient-oscuro: #2a0f41;
+.container__nothingscreen{
+    min-width: 100vw ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: $gradient-oscuro;
+}
+
+
+.container__nothigScreen-text{
+    color: rgb(195, 195, 195);
+    
+}
+
+.container__nothigScreen-text h1{
+    font-size: 4rem;
+    
+}
+.container__nothigScreen-text h2{
+    font-size: 2rem;
+    
+}
+
+.nothing__link{
+    text-decoration: none;
+    color: rgb(161, 158, 202);
+}
+
+
+.imgNothing{
+    max-height: 400px;
+}
+
