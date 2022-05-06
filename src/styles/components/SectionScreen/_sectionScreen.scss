@@ -1,47 +1,67 @@
-
-
-.screenActon__container-nav{
-    display: flex;
-    justify-content: space-between;
+.imgIcon{
+    height: 2rem;
+    margin: .1rem;
+    margin-top: -.5rem;
 }
 
-.screenAction__navContainerLinks{
-    display: flex;
-    justify-content: space-between;
 
-    width: 500px;
+.containerDerecha{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-top: 2rem;
     
+}
+.containerSectionTable{
+    display: flex;
+    align-items: center;
+    margin: 3rem 2rem;
+    
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 166, 255, 0.22);
+    align-items: center;
+    padding: 0rem 2rem;
+    border-radius: .4rem;
+}
+.raster{
+    margin: .4rem;
+    opacity: 0.5;
+    width: 25px;
+    height: 40px;
+}
+.elementLista{
+text-align: center;
+font-size: 1.4rem;
+
 
 }
 
-.screenAction__nav-container-list{
-    ul{
-
-        list-style: none;
-        display: flex;
-        width: 500px;
-        justify-content: space-around;
-
-        
-
-        li{
-
-            color: #47525E;
-            font-family: Lato;
-            font-size: 18px;
-            line-height: 62px;
-            width: 162px;
-            text-align: center;
-        }
-
-    }
 
 
+
+//==========================TABLA
+.container__table{
+    margin: 2rem;
+    border: 1px solid rgb(192, 188, 188);
 }
 
-.screenAction__navImg{
-    width: 151px;
-    height: 69px;
 
+ .td-buttons{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+    
+ }
+
+
+.btn-blues{
+    background-color: #00A6FF;
+    margin: .3rem; 
+    text-transform: none;
 }
-

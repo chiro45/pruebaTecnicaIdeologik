@@ -4,10 +4,13 @@ import { ScreenAction } from "./components/ScreenAction/ScreenAction";
 
 
 
+
+//para mostrar las interfaces debe descomentar una y asi poder ver la otra
+
 function App() {
   return (
-     <Login/>
-    //<ScreenAction/>
+   //<Login/>
+    <ScreenAction/>
   );
 }
 

@@ -7,18 +7,16 @@ background-repeat: no-repeat;
 background-size: cover;
 display: flex;
 min-height: 100vh;
-min-width: 100vw;
 justify-content: flex-end;
 align-items : center;
 }
 //====>contenedor del formulario<========
 .login__container-form{
-   
     background-color: #fff;
     border-radius: 20px;
     width: 623px;
     height: 730px;
-    margin-right: 200px;
+    margin-right: 10vw;
 }
 
 .login__from{
@@ -190,12 +188,13 @@ align-items : center;
 }
 .login__sms-Image-form{
     width: 152px;
+    object-fit: contain;
     
 
 }
 .login__-martImage-form{
     width: 242px;
-    
+    object-fit: contain;
 }
 //=======>Contiene el titulo y la descript<==============
 .login__container-titleform{
@@ -270,15 +269,18 @@ align-items : center;
     }  
 }
 }
-
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1366px) {
+    .login__container{
+        
+        min-height: 100vh;
+        
+        }
     //====>contenedor del formulario<========
     .login__container-form{
     
         width: 423px;
         height: 530px;
-        margin-right: 100px;
+        margin-right: 10vw;
     }
     
     .login__from{
@@ -307,93 +309,3 @@ align-items : center;
 
 }
 
-
-
-@media screen and (max-width: 530px) {
-//====>Contenedor principal del componente <========
-.login__container{
-    display: flex;
-    min-height: 100vh;
-    min-width: 100vw;
-    justify-content: center;
-    align-items : center;
-    }
-    //====>contenedor del formulario<========
-    .login__container-form{
-        width: 300px;
-        height: 530px;
-        margin: 0;
-    }
-    .login__sms-Image-form{ 
-        height: 40px;  
-    }
-    .login__-martImage-form{
-       
-        height: 35px;
-        width: 100%;
-    }
-    //=======>Contiene el titulo y la descript<==============
-    .login__container-titleform{
-        margin-top: 1rem;
-        width: 200px;
-    .login__titleForm{        
-            font-size: 1.3rem;
-           
-            line-height: 20px;
-        
-            width: 200px;
-        }
-        .login__decriptForm{
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            
-           
-            font-size: 1rem ;
-            line-height: 18px;
-            width: 200px;     
-        }
-    
-    }    
-//=======>contiene inputs<==============
-    .login__container-inputs{
-        display: flex;
-        flex-direction: column;
-    }    
-    
-    .input{
-        border: 1px solid #8492A6;
-        border-radius: 5px;
-        width: 220px;
-        height: 30px;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-        padding: .4rem;
-         outline: hidden;
-        
-    }
-    
-    .input::placeholder{
-       
-        font-size: 1rem;
-        line-height: 62px;
-        width: 220px;
-    } 
-    //=======>Boton de acceder<==============
-    .login__button-form{
-
-        border-radius: 5px;
-        width: 230px;
-        height: 45px;
-        padding: .2rem;
-        font-size: 1rem;
-        
-        margin-top: 2rem;
-       
-        
-    }
-    .login__forgetpasswd{
-        width: 200px;
-        font-size: 1rem;
-
-    }
-}

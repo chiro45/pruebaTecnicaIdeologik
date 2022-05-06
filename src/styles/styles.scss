@@ -11,10 +11,8 @@ html{
 
 
 
-
-$colorButton:#00A6FF ;
-
-$greyText: #8190A5;
+//importacion global
+@import './global/global';
 
 
 //importamos los componentes
@@ -23,3 +21,7 @@ $greyText: #8190A5;
 @import './components/Login/login';
 
 @import './components/SectionScreen/sectionScreen';
+
+
+
+@import './components/SectionScreen/NavBar/navBar';
