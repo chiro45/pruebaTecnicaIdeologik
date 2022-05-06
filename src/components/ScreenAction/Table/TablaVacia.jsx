@@ -22,7 +22,7 @@ export const TablaVacia = () => {
 
 </table>
     </div>
-{/* efecto de carga para que la pantalla no se vea tan estatica */}
+{/* efecto de carga para que la pantalla no se vea tan estatica  y vacia*/}
 <div className='container__spiner'>
 
     <h2>Seleccione un Simulador</h2>

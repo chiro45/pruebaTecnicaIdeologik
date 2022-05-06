@@ -22,7 +22,8 @@ export const login = (user)=>({
     payload: {user: user}
 })
 
-
+//se llama desde el navbar
+//realiza el logout en el store de la app
 export const StartLogout =()=>{
     return async(dispatch)=>{
         dispatch(logout())
@@ -31,8 +32,7 @@ export const StartLogout =()=>{
 }
 
 
-//se llama desde el navbar
-//realiza el logout en el store de la app
+
 export const logout = ()=>({
     type: types.logout
 
