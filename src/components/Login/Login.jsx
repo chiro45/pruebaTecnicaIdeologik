@@ -65,7 +65,7 @@ const handleSubmit = (e)=>{
                                        value={user}
                                        onChange={handleInputChange}/>
                                       <input 
-                                      type={(showPasswd) ? "current-password" : "text"} 
+                                      type={(showPasswd) ? "password" : "text"} 
                                       className='input' 
                                       placeholder="Contraseña"
                                       name='password'
