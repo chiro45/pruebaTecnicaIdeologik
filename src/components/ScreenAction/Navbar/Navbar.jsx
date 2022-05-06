@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import LogoNav from '../../../assets/archivosScreenAction/LogoNav.png'
 
-
+import { useDispatch } from 'react-redux';
+import { logout } from '../../../actions/auth';
 
 //en este temenos el navBar y todos sus elementos
 
 export const Navbar = ({changeSimulator}) => {
+const dispatch = useDispatch();
 
 //instanciamos el useState para poder pasar la seleccion del usuario de los simuladores
     const [elementNav, setElementNav] = useState(false);
@@ -20,6 +22,12 @@ export const Navbar = ({changeSimulator}) => {
 //realizamos cambios en el navbar
 const handleClick = ()=>{
     setElementNav(!elementNav)
+}
+
+
+//realizamos el logout
+const handleLogout = ()=>{
+    dispatch(logout())
 }
   return (
     <nav className="screenActon__container-nav">
@@ -48,7 +56,7 @@ const handleClick = ()=>{
             </div>
 
             <div className='screenAction__container-navButtonLogout'>
-                <button className='navButtonLogout'>Cerrar Sesion  <i className="fa-solid fa-arrow-right-from-bracket iconLogout"></i></button>
+                <button className='navButtonLogout' onClick={handleLogout}>Cerrar Sesion  <i className="fa-solid fa-arrow-right-from-bracket iconLogout"></i></button>
             </div>
 
             

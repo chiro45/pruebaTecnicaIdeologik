@@ -1,16 +1,21 @@
-import { Login } from "./components/Login/Login";
-import { ScreenAction } from "./components/ScreenAction/ScreenAction";
+
+
+
+import { AppRouter } from "./Routes/AppRouter";
+
+import { Provider } from 'react-redux'
+import { Store } from "./store/Store";
 
 
 
 
-
-//para mostrar las interfaces debe descomentar una y asi poder ver la otra
 
 function App() {
   return (
-   //<Login/>
-    <ScreenAction/>
+    //con el provider le damos el contexto del store a nuestro app
+    <Provider store={Store}> 
+        <AppRouter/>
+    </Provider>
   );
 }
 
