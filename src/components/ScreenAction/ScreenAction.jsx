@@ -17,7 +17,7 @@ import { useSelector } from 'react-redux';
 export const ScreenAction = () => {
 
   //state para el cambio del llamado desde el navBar
- const [simulator, setSimulator] = useState('VRs');
+ const [simulator, setSimulator] = useState('(no seleccionado)');
 
  const {products} =  useSelector(store => store.productReducer)
 
